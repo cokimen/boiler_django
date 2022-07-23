@@ -17,12 +17,6 @@ class PersonSampleSerializer(serializers.Serializer):
     def create(self, validated_data):
         schools = self.context.get('request').data.get('schools')
         person = PersonSample.objects.create(**validated_data)
-        # for x in schools:
-        #     instance_school = SchoolSample()
-        #     instance_school.school_name = x.get("school_name")
-        #     instance_school.school_level = x.get("school_level")
-        #     instance_school.person = person
-        #     instance_school.save()
         return person
 
     def to_representation(self, instance):
@@ -60,6 +54,7 @@ class SchoolSampleSerializer(serializers.Serializer):
             }
         return [
             {
+                "id": x.pk,
                 "school_name": x.school_name,
                 "school_level": x.school_level
             } for x in schools
