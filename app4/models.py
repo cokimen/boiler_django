@@ -14,5 +14,5 @@ class Fish(models.Model):
     name = models.CharField(max_length=100)
 
 
-# class Crab(models.Model):
-#     pass
+class Crab(models.Model):
+    name = models.ForeignObject
