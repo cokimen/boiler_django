@@ -9,8 +9,6 @@ class FishViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.CreateM
 
     def get_serializer_context(self):
         context = super(FishViewSet, self).get_serializer_context()
-        # context.update({"pengarang": self.request.user})
-        # context.update({"judul": self.request.data.get('title', None)})
         return context
 
     def create(self, request, *args, **kwargs):
@@ -28,6 +26,7 @@ class OceanViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Create
         context = super(OceanViewSet, self).get_serializer_context()
         context.update({"pengarang": self.request.user})
         context.update({"judul": self.request.data.get('title', None)})
+        context.update({'action': self.action})
         return context
 
     def create(self, request, *args, **kwargs):
