@@ -23,4 +23,10 @@ urlpatterns = [
     path('app3/', include('app3.urls')),
     path('app4/', include('app4.urls')),
     path('app6/', include('app6.urls')),
+    path('app8singleroute/', include('app8singleroute.urls')),
+    path('app10srznomodel/', include('app10srznomodel.urls')),
+    path('app12extrakw/', include('app12extrakw.urls')),
+    path('app13multiple/', include('app13multiple.urls')),
+    path('app13multiple/', include('app13multiple.urls')),
+    path('app14kwargssrz/', include('app14kwargssrz.urls')),
 ]
