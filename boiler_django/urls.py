@@ -29,4 +29,5 @@ urlpatterns = [
     path('app13multiple/', include('app13multiple.urls')),
     path('app13multiple/', include('app13multiple.urls')),
     path('app14kwargssrz/', include('app14kwargssrz.urls')),
+    path('app15listfieldsample/', include('app15listfieldsample.urls')),
 ]

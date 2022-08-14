@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'app12extrakw',
     'app13multiple',
     'app14kwargssrz',
+    'app15listfieldsample',
 ]
 
 MIDDLEWARE = [
