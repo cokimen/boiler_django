@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'app13multiple',
     'app14kwargssrz',
     'app15listfieldsample',
+    'app9sampleroute',
 ]
 
 MIDDLEWARE = [
