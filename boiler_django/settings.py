@@ -51,13 +51,16 @@ INSTALLED_APPS = [
     'app14kwargssrz',
     'app15listfieldsample',
     'app9sampleroute',
+    'app17apiviewsample',
+    'app20modelalt',
+    'app00starter',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
