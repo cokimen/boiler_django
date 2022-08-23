@@ -35,4 +35,5 @@ urlpatterns = [
     path('app17apiviewsample/', include('app17apiviewsample.urls')),
     path('app20modelalt/', include('app20modelalt.urls')),
     path('app00starter/', include('app00starter.urls')),
+    path('app21apiview/', include('app21apiview.urls')),
 ]

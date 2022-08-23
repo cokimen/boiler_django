@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'app17apiviewsample',
     'app20modelalt',
     'app00starter',
+    'app21apiview',
 ]
 
 MIDDLEWARE = [
