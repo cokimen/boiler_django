@@ -1,8 +1,8 @@
-from .views import ClothesViewSet, ClothesViewSetList
+from .views import ClothesViewSet, ClothesViewSetList, ClothestGenericAPIView
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
-# router.register('clo', ClothesViewSetList.as_view(), basename='clo')
+# router.register('clo', ClothestGenericAPIView, basename='clo')
 
 
 urlpatterns = [

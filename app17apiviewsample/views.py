@@ -25,3 +25,19 @@ class ClothesViewSetList(mixins.ListModelMixin,
 
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
+
+
+class ClothestGenericAPIView(mixins.ListModelMixin,
+                             mixins.CreateModelMixin,
+                             generics.GenericAPIView):
+
+    # def get_extra_actions(self):
+    #     return {
+    #         'get': 'list'
+    #     }
+
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)

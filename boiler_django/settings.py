@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'app20modelalt',
     'app00starter',
     'app21apiview',
+    'app22customser',
     'django_extensions',
 ]
 
