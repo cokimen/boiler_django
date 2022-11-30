@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'app00starter',
     'app21apiview',
     'app22customser',
+    'samplepaginate',
     'django_extensions',
 ]
 
@@ -98,7 +99,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'boiler_django',
         'USER': 'root',
-        'PASSWORD': 'DjangoRest_1313'
+        'PASSWORD': 'DjangoRest_1313',
+        'HOSTNAME': '192.168.100.30',
     }
 }
 

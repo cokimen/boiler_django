@@ -10,6 +10,12 @@ class FurnitureSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         print(self.context.get('action', None))
+        if attrs.get('merk', None) == 'coki':
+            raise serializers.ValidationError({
+                "non_field_errors": {
+                    "time_elapsed": 3
+                }
+            })
         if self.context.get('action', None) == 'update':
             print('update')
             print('self.instance = ', self.instance)
